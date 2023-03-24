@@ -33,6 +33,7 @@ class Library:
 while True:
     system('clear')
     print("""LIBRARY MENU:
+-------------------
 [1] Books list
 [2] Add a book
 [3] Find a book
@@ -40,7 +41,8 @@ while True:
 [5] Borrowers list
 [6] Add a borrower
 [7] Find a borrower
-[8] Exit""")
+[8] Exit
+-------------------""")
     option = input("Select your option: ")
     if option == "1":
         pass
