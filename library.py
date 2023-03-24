@@ -107,7 +107,6 @@ while True:
         author = input("The author of the new book: ")
         library.add_book(title, author)
         print (f"'{title}' from {author} is just added in Library.")
-        time.sleep(2)
     elif option == "3":
         pass
     elif option == "4":
@@ -127,7 +126,6 @@ while True:
         name = input("The name of the new borrower: ")
         library.add_borrower(name)
         print (f"'{name}' is just added in Librarys list of debtors.")
-        time.sleep(2)
     elif option == "7":
         pass
     if option != "8":
