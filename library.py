@@ -1,6 +1,7 @@
 from os import system
 from book import Book
 from borrower import Borrower
+import time
 
 
 system('clear')
@@ -30,6 +31,7 @@ class Library:
         
 # MENU HERE
 while True:
+    system('clear')
     print("""LIBRARY MENU:
 [1] Books list
 [2] Add a book
@@ -39,3 +41,24 @@ while True:
 [6] Add a borrower
 [7] Find a borrower
 [8] Exit""")
+    option = input("Select your option: ")
+    if option == "1":
+        pass
+    elif option == "2":
+        pass
+    elif option == "3":
+        pass
+    elif option == "4":
+        pass
+    elif option == "5":
+        pass
+    elif option == "6":
+        pass
+    elif option == "7":
+        pass
+    elif option == "8":
+        pass
+    else:
+        print("Please enter just the above options!")
+        time.sleep(2)
+    
