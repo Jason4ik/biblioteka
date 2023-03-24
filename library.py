@@ -15,4 +15,27 @@ class Library:
         author = input('Insert the author of that book: ')
         self.books.append(Book(title, author))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # MENU HERE
+while True:
+    print("""LIBRARY MENU:
+[1] Books list
+[2] Add a book
+[3] Find a book
+[4] Loan a book
+[5] Borrowers list
+[6] Add a borrower
+[7] Find a borrower """)
