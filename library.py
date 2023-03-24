@@ -17,9 +17,9 @@ class Library:
     def add_book(self, title, author):
         self.books.append(Book(title, author))
 
-    def find_book(self, title, author):
+    def find_book(self, title):
         for book in self.books:
-            if book.title == title and book.author == author:
+            if book.title == title:
                 print("Book is found! Displaying an info..")
                 inf = book.info()
                 print(f"""Title: {inf["Title"]}
@@ -111,7 +111,11 @@ while True:
         title = input("The title of the book you search: ")
         library.find_book(title)
     elif option == "4":
-        pass
+        title = input("The title of the new book: ")
+        author = input("The author of the new book: ")
+        name = input("The borrower of the new book: ")
+        library.loan_book(title, author, name)
+        
     elif option == "5":
         system('clear')
         print("""Our borrower in Library are now:
