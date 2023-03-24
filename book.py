@@ -9,4 +9,4 @@ class Book:
         self.availability = True
 
     def info(self):
-        return f"Title: {self.title}, Author: {self.author}, ISBN: {self.isbn}, Availability: {self.availability}"
+        return {"Title": self.title, "Author": self.author, "ISBN": self.isbn, "Availability": self.availability}
