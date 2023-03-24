@@ -115,7 +115,6 @@ while True:
         author = input("The author of the new book: ")
         name = input("The borrower of the new book: ")
         library.loan_book(title, author, name)
-        
     elif option == "5":
         system('clear')
         print("""Our borrower in Library are now:
@@ -128,7 +127,8 @@ while True:
         library.add_borrower(name)
         print (f"'{name}' is just added in Librarys list of debtors.")
     elif option == "7":
-        pass
+        name = input("The name of the borrower: ")
+        library.find_borrower(name)
     if option != "8":
         input("Press Enter to continue...")
         continue
