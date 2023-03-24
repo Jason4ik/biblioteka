@@ -53,6 +53,9 @@ Borrowed books:""")
                     time.sleep(0.5)
                     print(f'Book is available!\nNow you borrowed book {info["Title"]} from {info["Author"]}!')
                     self.books[ind].availability = False
+                    for indx, borr in enumerate(self.borrowers):
+                        if borr.name == name_of_borrower:
+                            self.borrowers[indx].borrowed_books.append(book)
                     return 1
                 else:
                     time.sleep(0.5)
@@ -61,8 +64,23 @@ Borrowed books:""")
         time.sleep(0.5)
         print("Sorry, but book doesn't exist in library.")
 
-    def return_book(self):
-        pass
+    def return_book(self, title, author, name_of_borrower):
+        print("Searching for a book...")
+        for ind, book in enumerate(self.books):
+            inf = book.info()
+            if inf["Title"] == title and inf["Author"] == author:
+                print("Book is found!")
+                self.books[ind].availability = True
+                for indx, borrower in enumerate(self.borrowers):
+                    if borrower.name == name_of_borrower:
+                        del self.borrowers[indx].borrowed_books[book]
+                        return 1
+        print("Book is not borrowed.")
+
+
+
+
+        
 
 library = Library()
 
