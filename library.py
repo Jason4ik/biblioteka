@@ -37,4 +37,5 @@ while True:
 [4] Loan a book
 [5] Borrowers list
 [6] Add a borrower
-[7] Find a borrower """)
+[7] Find a borrower
+[8] Exit""")
