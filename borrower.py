@@ -5,5 +5,5 @@ class Borrower:
         self.borrowed_books = []
 
     def info(self):
-        return {'name': self.name, 'id':self.id}
+        return {'name': self.name, 'id':self.id, 'borrowed_books':self.borrowed_books} 
 
