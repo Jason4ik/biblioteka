@@ -82,7 +82,12 @@ while True:
 -------------------""")
     option = input("Select your option: ")
     if option == "1":
+<<<<<<< HEAD
         pass
+=======
+        for book in library.books:
+            pass
+>>>>>>> 76196523f0b196e2013c6141b8438b36ba9244d6
     elif option == "2":
         title = input("The title of the new book: ")
         author = input("The author of the new book: ")
