@@ -75,7 +75,10 @@ while True:
     if option == "1":
         pass
     elif option == "2":
-        
+        title = input("The title of the new book: ")
+        author = input("The title of the new book: ")
+        library.add_book(title, author)
+        print (f"'{title} from {author} is just added in Library.")
     elif option == "3":
         pass
     elif option == "4":
