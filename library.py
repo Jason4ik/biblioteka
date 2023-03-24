@@ -100,7 +100,13 @@ while True:
     elif option == "4":
         pass
     elif option == "5":
-        pass
+        system('clear')
+        print("""Our borrower in Library are now:
+-------------------""")
+        for borrower in library.borrowers:   
+            print(f"{borrower.id} - {borrower.name}, {len(borrower.borrowed_books)} books borrowed.")
+        print("-------------------")
+        input("Press enter to return:")
     elif option == "6":
         name = input("The name of the new borrower: ")
         library.add_borrower(name)
