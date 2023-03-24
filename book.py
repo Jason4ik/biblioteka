@@ -4,4 +4,5 @@ class Book:
     def __init__(self, title, author, isbn, availability = True):
         self.title = title 
         self.author = author
-        self.isbn = availability
+        self.isbn = isbn
+        self.availability = availability
