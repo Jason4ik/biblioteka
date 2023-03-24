@@ -82,7 +82,7 @@ while True:
 -------------------""")
     option = input("Select your option: ")
     if option == "1":
-        
+        pass
     elif option == "2":
         title = input("The title of the new book: ")
         author = input("The author of the new book: ")
@@ -99,7 +99,8 @@ while True:
     elif option == "7":
         pass
     elif option == "8":
-        pass
+        print("Alright, goodbye!")
+        exit()
     else:
         print("Please enter just the above options!")
         time.sleep(2)
