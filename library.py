@@ -10,7 +10,9 @@ class Library:
         self.books = []
         self.borrowers = []
 
-    def add_book(self):
-        title = input('Insert title of book to add: ')
-        author = input('Insert the author of that book: ')
+    def add_book(self, title, author):
         self.books.append(Book(title, author))
+
+    def loan_book(self, title, author):
+        print('Checking availability of book...')
+        
