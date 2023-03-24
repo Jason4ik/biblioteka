@@ -76,10 +76,6 @@ Borrowed books:""")
                         del self.borrowers[indx].borrowed_books[book]
                         return 1
         print("Book is not borrowed.")
-
-
-
-
         
 
 library = Library()
@@ -132,8 +128,12 @@ while True:
         time.sleep(2)
     elif option == "7":
         pass
+    if option != "8":
+        input("Press Enter to continue...")
+        continue
     elif option == "8":
-        pass
+        print("Thank you for visiting!")
+        exit()
     else:
         print("Please enter just the above options!")
         time.sleep(2)
