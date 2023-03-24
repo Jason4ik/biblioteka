@@ -54,7 +54,9 @@ Availability: {inf["Availability"]}""")
 
     def return_book(self):
         pass
-        
+
+library = Library()
+
 # MENU HERE
 while True:
     system('clear')
@@ -73,7 +75,7 @@ while True:
     if option == "1":
         pass
     elif option == "2":
-        pass
+        
     elif option == "3":
         pass
     elif option == "4":
