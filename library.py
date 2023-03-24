@@ -26,7 +26,20 @@ class Library:
 Author: {inf["Author"]}
 ISBN: {inf["ISBN"]}
 Availability: {inf["Availability"]}""")
+                return 1
+        print("Book doesn\'t found.")
 
+
+    def find_borrower(self, name_of_the_borrower):
+        for ind, borr in enumerate(self.borrowers):
+            if borr.name == name_of_the_borrower:
+                print("Borrower found! Displaying info...")
+                inf = borr.info()
+                print(f"""Name: {inf["name"]}
+ID: {inf["id"]}
+Borrowed books:""")
+                for book in self.borrowers[ind].borrowed_books:
+                    print(f"\t\t{book}")
 
 
     def loan_book(self, title, author, name_of_borrower):
@@ -39,10 +52,6 @@ Availability: {inf["Availability"]}""")
                 if info["Availability"]:
                     time.sleep(0.5)
                     print(f'Book is available!\nNow you borrowed book {info["Title"]} from {info["Author"]}!')
-                    for inx, borr in enumerate(self.borrowers):
-                        borr_inf = borr.info()
-                        if borr_inf["name"] == name_of_borrower:
-                            borr_inf
                     self.books[ind].availability = False
                     return 1
                 else:
