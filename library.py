@@ -102,7 +102,10 @@ while True:
     elif option == "5":
         pass
     elif option == "6":
-        pass
+        name = input("The name of the new borrower: ")
+        library.add_borrower(name)
+        print (f"'{name}' is just added in Librarys list of debtors.")
+        time.sleep(2)
     elif option == "7":
         pass
     elif option == "8":
