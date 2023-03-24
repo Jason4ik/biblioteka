@@ -100,13 +100,19 @@ while True:
 -------------------""")
     option = input("Select your option: ")
     if option == "1":
-        for book in library.books:
-            pass
+        system('clear')
+        print("""Our books in Library are now:
+-------------------""")
+        for book in library.books:   
+            print(f"- '{book.title}' from {book.author}, ISBN {book.isbn}, available:{book.availability}")
+        print("-------------------")
+        input("Press enter to return:")
     elif option == "2":
         title = input("The title of the new book: ")
         author = input("The author of the new book: ")
         library.add_book(title, author)
-        print (f"'{title} from {author} is just added in Library.")
+        print (f"'{title}' from {author} is just added in Library.")
+        time.sleep(2)
     elif option == "3":
         pass
     elif option == "4":
@@ -114,15 +120,15 @@ while True:
     elif option == "5":
         pass
     elif option == "6":
-        pass
+        name = input("The name of the new borrower: ")
+        library.add_borrower(name)
+        print (f"'{name}' is just added in Librarys list of debtors.")
+        time.sleep(2)
     elif option == "7":
+        pass
+    elif option == "8":
         pass
     else:
         print("Please enter just the above options!")
         time.sleep(2)
-    if option != "8":
-        input("\nPress Enter to continue....")
-    elif option == "8":
-        print("Alright, goodbye!")
-        exit()
     
