@@ -102,13 +102,11 @@ while True:
         for book in library.books:   
             print(f"- '{book.title}' from {book.author}, ISBN {book.isbn}, available:{book.availability}")
         print("-------------------")
-        input("Press enter to return:")
     elif option == "2":
         title = input("The title of the new book: ")
         author = input("The author of the new book: ")
         library.add_book(title, author)
         print (f"'{title}' from {author} is just added in Library.")
-        time.sleep(2)
     elif option == "3":
         pass
     elif option == "4":
@@ -120,12 +118,10 @@ while True:
         for borrower in library.borrowers:   
             print(f"{borrower.id} - {borrower.name}, {len(borrower.borrowed_books)} books borrowed.")
         print("-------------------")
-        input("Press enter to return:")
     elif option == "6":
         name = input("The name of the new borrower: ")
         library.add_borrower(name)
         print (f"'{name}' is just added in Librarys list of debtors.")
-        time.sleep(2)
     elif option == "7":
         pass
     if option != "8":
