@@ -14,3 +14,5 @@ class Library:
         title = input('Insert title of book to add: ')
         author = input('Insert the author of that book: ')
         self.books.append(Book(title, author))
+
+# MENU HERE
