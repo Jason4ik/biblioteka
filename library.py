@@ -108,7 +108,8 @@ while True:
         library.add_book(title, author)
         print (f"'{title}' from {author} is just added in Library.")
     elif option == "3":
-        pass
+        title = input("The title of the book you search: ")
+        library.find_book(title)
     elif option == "4":
         pass
     elif option == "5":
