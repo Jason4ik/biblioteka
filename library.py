@@ -105,9 +105,12 @@ while True:
         pass
     elif option == "7":
         pass
-    elif option == "8":
-        pass
     else:
         print("Please enter just the above options!")
         time.sleep(2)
+    if option != "8":
+        input("\nPress Enter to continue....")
+    elif option == "8":
+        print("Alright, goodbye!")
+        exit()
     
