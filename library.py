@@ -17,9 +17,9 @@ class Library:
     def add_book(self, title, author):
         self.books.append(Book(title, author))
 
-    def find_book(self, title, author):
+    def find_book(self, title):
         for book in self.books:
-            if book.title == title and book.author == author:
+            if book.title == title:
                 print("Book is found! Displaying an info..")
                 inf = book.info()
                 print(f"""Title: {inf["Title"]}
