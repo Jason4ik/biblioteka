@@ -8,6 +8,9 @@ system('clear')
 class Library:
     def __init__(self):
         self.books = []
+        self.borrowers = []
 
     def add_book(self):
-        pass
+        title = input('Insert title of book to add: ')
+        author = input('Insert the author of that book: ')
+        self.books.append(Book(title, author))
